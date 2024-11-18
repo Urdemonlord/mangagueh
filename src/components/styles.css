@@ -1,0 +1,187 @@
+/* styles.css */
+.container {
+    padding-top: 2rem;
+  }
+  
+  .navbar {
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar .nav-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 4rem;
+  }
+  
+  .navbar .nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4F46E5; /* Indigo color */
+  }
+  
+  .navbar .nav-links a {
+    color: #374151; /* Gray 900 */
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar .nav-links a:hover {
+    border-color: #4F46E5; /* Indigo color */
+    color: #1F2937; /* Darker gray */
+  }
+  
+  .navbar .sign-in-btn {
+    background-color: #4F46E5; /* Indigo color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .navbar .sign-in-btn:hover {
+    background-color: #4338CA; /* Indigo hover */
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .search-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827; /* Dark gray */
+  }
+  
+  .search-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 24rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #D1D5DB; /* Gray */
+    border-radius: 0.375rem;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4F46E5; /* Indigo color */
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3); /* Indigo focus */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+  }
+  
+  .manga-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .manga-item {
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+  .manga-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manga-image {
+    position: relative;
+    padding-top: 142%;
+    overflow: hidden;
+  }
+  
+  .manga-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  
+  .manga-item:hover .manga-image img {
+    transform: scale(1.05);
+  }
+  
+  .manga-info {
+    padding: 1rem;
+  }
+  
+  .manga-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827; /* Dark gray */
+    line-height: 1.5;
+    min-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .manga-read-btn {
+    background-color: #4F46E5; /* Indigo color */
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    text-align: center;
+    transition: background-color 0.2s;
+  }
+  
+  .manga-read-btn:hover {
+    background-color: #4338CA; /* Indigo hover */
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .pagination-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid #D1D5DB; /* Gray */
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #F3F4F6; /* Light gray hover */
+  }
+  
+  .pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination-info {
+    font-size: 0.875rem;
+    color: #4B5563; /* Gray */
+  }
+  
